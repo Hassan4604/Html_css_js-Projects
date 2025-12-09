@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Bug</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="main active" id="start-screen">
+            <h1>Quiz Time</h1>
+            <br>
+            <h3>Test your knowledge</h3>
+            <button id="start-button">Start</button>
+        </div>
+
+        <div class="main" id="quiz-screen">
+            <div class="ques-no">0</div>
+
+            <div class="ques">
+                <input type="text" readonly placeholder="Your question appears here">
+            </div>
+
+            <div class="options">
+                <div class="option"><button>Option 1</button></div>
+                <div class="option"><button>Option 2</button></div>
+                <div class="option"><button>Option 3</button></div>
+                <div class="option"><button>Option 4</button></div>
+            </div>
+
+            <div>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+
+        <div class="main" id="result-screen">
+            <h3>The Quiz has Ended!</h3>
+            <br>
+            <h5>The score is <span id="score"></span></h5>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
