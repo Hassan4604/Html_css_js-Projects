@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="scoreboard">
+      <div>Player X: <span id="scoreX">0</span></div>
+      <div>Player O: <span id="scoreO">0</span></div>
+      <div>Draw: <span id="draw">0</span></div>
+    </div>
+
+    <div class="grid-box">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div>
+      <button class="buton reset_button">RESET BOARD</button>
+      <button class="buton reset_game">RESTART GAME</button>
+    </div>
+
+    <audio class="sound" src="/audios/button.mp3" preload="auto"></audio>
+    <audio class="cancel_pop" src="/audios/cancel_button.mp3" preload="auto" ></audio>
+    <audio class="win_pop" src="/audios/win_sound.mp3" preload="auto"></audio>
+</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
